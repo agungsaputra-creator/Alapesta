@@ -88,6 +88,14 @@ a:hover {
   text-decoration: none;
 }
 
+#element::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 .link:hover {
   color: red;
 }
@@ -135,7 +143,26 @@ a:hover {
   color: #E78A6E;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+.nav-pills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  overflow: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #E78A6E;
+  color: #FFFFFF;
+}
+
+.nav-pills .show > .nav-link {
   background-color: #E78A6E;
   color: #FFFFFF;
 }
@@ -297,13 +324,6 @@ i
 .profile.big {
   width: 100px !important;
   height: 100px !important;
-}
-
-.profile.big img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .profile.small {
@@ -590,10 +610,7 @@ i
   .h4,
   .h5,
   .h6 {
-    margin: 0;
-    margin-bottom: 0 !important;
-    font-weight: 600;
-    line-height: 1.5;
+    line-height: 1.3;
   }
   h1,
   .h1 {
@@ -618,6 +635,90 @@ i
   h6,
   .h6 {
     font-size: 1em !important;
+  }
+  .for_slick_slider .items {
+    margin: 25px;
+  }
+  .nav-link {
+    width: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 823px) {
+  h1,
+  .h1 {
+    font-size: 1.5em !important;
+  }
+  h2,
+  .h2 {
+    font-size: 1.3em !important;
+  }
+  h3,
+  .h3 {
+    font-size: 1.1em !important;
+  }
+  h4,
+  .h4 {
+    font-size: 1em !important;
+  }
+  h5,
+  .h5 {
+    font-size: 1em !important;
+  }
+  h6,
+  .h6 {
+    font-size: 0.9em !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .for_slick_slider .items {
+    margin: 35px;
+  }
+  h1,
+  .h1 {
+    font-size: 1.1em !important;
+  }
+  h2,
+  .h2 {
+    font-size: 1em !important;
+  }
+  h3,
+  .h3 {
+    font-size: 1em !important;
+  }
+  h4,
+  .h4 {
+    font-size: 0.9em !important;
+  }
+  h5,
+  .h5 {
+    font-size: 0.8em !important;
+  }
+  h6,
+  .h6 {
+    font-size: 0.7em !important;
+  }
+  .border-sort {
+    padding: 8px;
+  }
+  .card-profile {
+    padding: 30px 30px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .card-profile {
+    padding: 50px 10px;
+  }
+  .card-ask {
+    padding: 20px;
   }
 }
 /*# sourceMappingURL=index.css.map */
