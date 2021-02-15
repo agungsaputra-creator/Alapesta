@@ -632,6 +632,29 @@ i
           align-items: center;
 }
 
+.mobile {
+  display: none;
+}
+
+#menuside-nonlogin {
+  margin-left: -100%;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  padding: 5%;
+}
+
 @media only screen and (max-width: 992px) {
   h1,
   h2,
@@ -746,6 +769,12 @@ i
   .card-profile {
     padding: 30px 30px;
   }
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -754,6 +783,9 @@ i
   }
   .card-ask {
     padding: 20px;
+  }
+  .logo-header {
+    width: 60%;
   }
 }
 /*# sourceMappingURL=index.css.map */
