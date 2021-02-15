@@ -34,7 +34,7 @@ h6,
 .h5,
 .h6 {
   margin: 0;
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
   font-weight: 600;
   line-height: 1.5;
 }
@@ -113,6 +113,10 @@ a{
   color: #E78A6E;
 }
 
+.color-danger{
+  color: #FF5959 !important;
+}
+
 .font-light {
   font-weight: 300 !important;
 }
@@ -157,6 +161,35 @@ a{
 			background-color: #E78A6E;
 			color: #FFFFFF;
 		}
+	}
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.icon-google{
+	width: 22px;
+}
+
+.login-or {
+	position: relative;
+	text-align: center;	
+	p {
+		position: relative;
+		z-index: 1;
+		background: #fff;
+		padding: 0 16px;
+		display: inline-block;
+	}
+	&::after{
+		position: absolute;
+		height: 1px;
+		width: 100%;
+		top: 50%;
+		left: 0;
+		background: #dedede;
+		content: " ";
 	}
 }
 
