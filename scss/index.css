@@ -660,6 +660,10 @@ footer {
   padding: 5% 0;
 }
 
+.borderless td, .borderless th {
+  border: none;
+}
+
 @media only screen and (max-width: 992px) {
   h1,
   h2,
