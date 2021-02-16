@@ -86,3 +86,13 @@ document.querySelector('button').addEventListener('click', () => {
     document.querySelector('svg').classList.add('animate');
   }, 10);
 });
+
+function openChat(){
+  document.getElementById("msger").style.marginRight = "0";
+  document.getElementById("content").style.display = "none";
+}
+
+function back(){
+  document.getElementById("msger").style.marginRight = "-100%";
+  document.getElementById("content").style.display = "block";
+}
