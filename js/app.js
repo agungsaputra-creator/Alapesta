@@ -79,3 +79,10 @@ function openSidemenu(){
 function closeSidemenu(){
   document.getElementById("menuside-nonlogin").style.marginLeft = "-100%";
 }
+
+document.querySelector('button').addEventListener('click', () => {
+  document.querySelector('svg').classList.remove('animate');
+  setTimeout(function() {
+    document.querySelector('svg').classList.add('animate');
+  }, 10);
+});

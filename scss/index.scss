@@ -559,6 +559,10 @@ a{
   padding: 5%;
 }
 
+.noborder{
+  border: none;
+}
+
 footer{
   background-color: #3F3F3F;
   padding: 5% 0;
@@ -566,6 +570,25 @@ footer{
 
 .borderless td, .borderless th {
   border: none;
+}
+
+svg {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+}
+
+
+svg.animate path {
+  animation: dash 0.75s linear both;
+  animation-delay: 0.5s;
+}
+
+@keyframes dash {
+  0% { stroke-dashoffset: 210; }
+  75% { stroke-dashoffset: -220; }
+  100% { stroke-dashoffset: -205; }
 }
 
 @media only screen and (max-width: 992px){
