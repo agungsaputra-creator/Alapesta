@@ -629,6 +629,7 @@ svg.animate path {
   overflow: hidden;
   overflow-x: hidden;
   transition: all .5s ease;
+  z-index: 999;
 }
 .msger-header {
 	display: flex;

@@ -765,6 +765,7 @@ svg.animate path {
   overflow-x: hidden;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
+  z-index: 999;
 }
 
 .msger-header {
