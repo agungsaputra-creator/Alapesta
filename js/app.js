@@ -88,11 +88,11 @@ document.querySelector('button').addEventListener('click', () => {
 });
 
 function openChat(){
-  document.getElementById("msger").style.marginRight = "0";
+  document.getElementById("room-chat").style.marginRight = "0";
   document.getElementById("content").style.display = "none";
 }
 
 function back(){
-  document.getElementById("msger").style.marginRight = "-100%";
+  document.getElementById("room-chat").style.marginRight = "-100%";
   document.getElementById("content").style.display = "block";
 }

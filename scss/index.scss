@@ -595,6 +595,11 @@ svg.animate path {
   transition: all .9s ease;
 }
 
+#room-chat{
+  margin-right: -100%;
+  transition: all .4 ease;
+}
+
 #chat{
   width: 50px;
   height: 50px;
