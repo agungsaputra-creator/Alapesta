@@ -591,13 +591,12 @@ svg.animate path {
   100% { stroke-dashoffset: -205; }
 }
 
-#content{
-  transition: all .9s ease;
-}
-
 #room-chat{
-  margin-right: -100%;
+  width: 100vw;
   transition: all .4 ease;
+  position: absolute;
+  right: -100%;
+  display: none;
 }
 
 #chat{
@@ -633,7 +632,7 @@ svg.animate path {
 	box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   overflow-x: hidden;
-  transition: all .5s ease;
+  // transition: all .5s ease;
   z-index: 999;
 }
 .msger-header {

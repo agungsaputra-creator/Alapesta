@@ -88,11 +88,15 @@ document.querySelector('button').addEventListener('click', () => {
 });
 
 function openChat(){
-  document.getElementById("room-chat").style.marginRight = "0";
+  document.getElementById("room-chat").style.right = "0";
+  document.getElementById("room-chat").style.transition = "all .4 ease";
+  document.getElementById("room-chat").style.display = "block";
   document.getElementById("content").style.display = "none";
+  
 }
 
 function back(){
-  document.getElementById("room-chat").style.marginRight = "-100%";
+  document.getElementById("room-chat").style.right = "-100%";
+  document.getElementById("room-chat").style.display = "none";
   document.getElementById("content").style.display = "block";
 }
